@@ -12,7 +12,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "build:prod": "craco build",
+    "build:prod": "cross-env GENERATE_SOURCEMAP=false craco build",
     "lint": "eslint src --color",
     "prettier": "prettier src --check",
     "husky-install": "husky install",
@@ -45,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^4.31.2",
     "@typescript-eslint/parser": "^4.31.2",
     "autoprefixer": "^9.8.6",
+    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.26.0",
     "husky": "^7.0.2",
